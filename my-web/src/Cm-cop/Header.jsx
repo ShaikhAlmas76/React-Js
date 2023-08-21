@@ -48,27 +48,27 @@ export default function Header() {
                         <MDBNavbarNav className='d-flex  justify-content-between'>
                             <MDBNavbarItem>
                                 <MDBNavbarLink active aria-current='page' href='#'>
-                                    <Link to="home">Home</Link>
+                                    <Link to="/home">Home</Link>
                                 </MDBNavbarLink>
                             </MDBNavbarItem>
                             <MDBNavbarItem>
                                 <MDBNavbarLink >
-                                    <Link to="about">About</Link>
+                                    <Link to="/about">About</Link>
                                 </MDBNavbarLink>
                             </MDBNavbarItem>
                             <MDBNavbarItem>
                                 <MDBNavbarLink >
-                                    <Link to="contact">contact</Link>
+                                    <Link to="/contact">contact</Link>
                                 </MDBNavbarLink>
                             </MDBNavbarItem>
                             <MDBNavbarItem>
                                 <MDBNavbarLink >
-                                    <Link to="Deny">Deny</Link>
+                                    <Link to="/Product">Product</Link>
                                 </MDBNavbarLink>
                             </MDBNavbarItem>
                             <MDBNavbarItem>
                                 <MDBNavbarLink >
-                                    <Link to="Example">Example</Link>
+                                    <Link to="/Example">Example</Link>
                                 </MDBNavbarLink>
                             </MDBNavbarItem>
 
