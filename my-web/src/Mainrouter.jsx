@@ -1,4 +1,4 @@
-import React from "react";
+import React, { Suspense } from "react";
 import { Route, Router, Routes, createBrowserRouter, } from 'react-router-dom';
 import Header from "./Cm-cop/Header";
 import Home from "./Home";
@@ -6,6 +6,7 @@ import About from "./About";
 import Contact from "./Contact";
 import Product from "./Product";
 import Example from "./Example";
+const classcompo = React.lazy(() => import("./Classcompo/Classcomproutes"))
 
 const Mainrouter = createBrowserRouter([
     {
@@ -32,7 +33,16 @@ const Mainrouter = createBrowserRouter([
     },
     {
         path: "/Example",
-        element: <> <Header /><Example /> </>
+        element: <> <Header /><Example /> </>,
+        children: [
+            {
+                path: "classcompo/*",
+                element: <Suspense fallback={<h2>Loading...</h2>}> <ClasscompoRoute /></Suspense>,
+            }, {
+                path: "functionalcompo/*",
+                element: <Suspense fallback={<h2>Loading...</h2>}> <FunctionalCompoRoute /></Suspense>,
+            }
+        ]
     }
 ])
 
