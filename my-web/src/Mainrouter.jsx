@@ -1,49 +1,56 @@
-import React, { Suspense } from "react";
-import { Route, Router, Routes, createBrowserRouter, } from 'react-router-dom';
-import Header from "./Cm-cop/Header";
-import Home from "./Home";
-import About from "./About";
-import Contact from "./Contact";
-import Product from "./Product";
+import React, { Children, Suspense } from "react";
+import { createBrowserRouter } from "react-router-dom"
+import Header from './Cm-cop/Header';
+import Home from './Home';
+import About from './About';
+import Contact from './Contact';
+import Product from "./Product"
 import Example from "./Example";
-const classcompo = React.lazy(() => import("./Classcompo/Classcomproutes"))
-
+const ClasscompoRoute = React.lazy(() => import("./Classcompo/Classcomproutes"))
+const FunctionalCompoRoute = React.lazy(() => import("./Functioncompo/Functioncomproutes"))
 const Mainrouter = createBrowserRouter([
+
     {
         path: "/",
-        element: <> <Header /></>,
+        element: <><Header /></>
+
     },
     {
         path: "/Home",
-        element: <> <Header /> <Home /> </>,
-    },
+        element: <><Header /><Home /></>
 
+    },
     {
         path: "/about",
-        element: <><Header /><About /></>,
+        element: <><Header /><About /></>
+
     },
     {
         path: "/Contact",
-        element: <> <Header /><Contact /> </>
-    },
+        element: <><Header /><Contact /></>
 
+    },
     {
         path: "/Product",
-        element: <> <Header /><Product /> </>
+        element: <><Header /><Product /></>
+
     },
     {
         path: "/Example",
-        element: <> <Header /><Example /> </>,
+        element: <><Header /><Example /></>,
         children: [
             {
-                path: "classcompo/*",
-                element: <Suspense fallback={<h2>Loading...</h2>}> <ClasscompoRoute /></Suspense>,
-            }, {
-                path: "functionalcompo/*",
-                element: <Suspense fallback={<h2>Loading...</h2>}> <FunctionalCompoRoute /></Suspense>,
+                path: "Classcompo/*",
+                element: <Suspense fallback={<h2>Loading...</h2>}><ClasscompoRoute /></Suspense>
+
+            }
+            , {
+                path: "Fuctioncompo/*",
+                element: <Suspense fallback={<h2>Loading...</h2>}><FunctionalCompoRoute /></Suspense>
             }
         ]
-    }
-])
 
-export default Mainrouter;
+    }
+
+]);
+export default Mainrouter
