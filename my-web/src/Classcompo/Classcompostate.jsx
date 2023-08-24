@@ -23,6 +23,7 @@ class Classcompostate extends Component {
                 <h1> {this.state.count}</h1>
                 <button onClick={this.Increment}>Increment</button>
                 <button onClick={this.Decrement}>Decrement</button>
+
             </>
         );
     }

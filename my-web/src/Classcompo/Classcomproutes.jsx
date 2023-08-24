@@ -4,6 +4,8 @@ import Classcompmenu from "./Classcompmenu";
 import Classcompointro from "./Classcompointro";
 import Classcompoprops from "./Classcompoprops";
 import Classcompostate from "./Classcompostate";
+import Classcompostatelife from "./Classcompostatelife";
+import ClassConditionrendering from "./ClassConditionrendering";
 
 class Classcomproutes extends Component {
     render() {
@@ -13,6 +15,8 @@ class Classcomproutes extends Component {
                     <Route path="Classcompointro" element={<Classcompointro />} />
                     <Route path="Classcompoprops" element={<Classcompoprops />} />
                     <Route path="Classcompostate" element={<Classcompostate />} />
+                    <Route path="Classcompostatelife" element={<Classcompostatelife />} />
+                    <Route path="ClassConditionrendering" element={<ClassConditionrendering />} />
 
                 </Route>
             </Routes >
