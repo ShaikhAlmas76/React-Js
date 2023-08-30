@@ -13,6 +13,7 @@ class Classcompmenu extends Component {
                     <li><Link to="Classcompostate"> Classcompostate </Link></li>
                     <li><Link to="Classcompostatelife"> Classcompostatelife </Link></li>
                     <li><Link to="ClassConditionrendering"> ClassConditionrendering </Link></li>
+                    <li><Link to="Classcompouncontrolled"> Classcompouncontrolled </Link></li>
 
 
 

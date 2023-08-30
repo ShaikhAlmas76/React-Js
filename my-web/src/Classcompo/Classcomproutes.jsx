@@ -6,6 +6,7 @@ import Classcompoprops from "./Classcompoprops";
 import Classcompostate from "./Classcompostate";
 import Classcompostatelife from "./Classcompostatelife";
 import ClassConditionrendering from "./ClassConditionrendering";
+import Classcompouncontrolled from "./Classcompouncontrolled";
 
 class Classcomproutes extends Component {
     render() {
@@ -17,6 +18,7 @@ class Classcomproutes extends Component {
                     <Route path="Classcompostate" element={<Classcompostate />} />
                     <Route path="Classcompostatelife" element={<Classcompostatelife />} />
                     <Route path="ClassConditionrendering" element={<ClassConditionrendering />} />
+                    <Route path="Classcompouncontrolled" element={<Classcompouncontrolled />} />
 
                 </Route>
             </Routes >
