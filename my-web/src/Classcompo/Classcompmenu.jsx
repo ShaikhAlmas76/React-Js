@@ -12,9 +12,10 @@ class Classcompmenu extends Component {
                     <li><Link to="Classcompoprops"> Classcompoprops </Link></li>
                     <li><Link to="Classcompostate"> Classcompostate </Link></li>
                     <li><Link to="Classcompostatelife"> Classcompostatelife </Link></li>
-                    <li><Link to="ClassConditionrendering"> ClassConditionrendering </Link></li>
+                    <li><Link to="Classconditionrendering"> Classconditionrendering </Link></li>
                     <li><Link to="Classcompouncontrolled"> Classcompouncontrolled </Link></li>
-
+                    <li><Link to="Classcompocontrolled"> Classcompocontrolled </Link></li>
+                    <li><Link to="Classlistandkey"> Classlistandkey </Link></li>
 
 
                 </ul>
