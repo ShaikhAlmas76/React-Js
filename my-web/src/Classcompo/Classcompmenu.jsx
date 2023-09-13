@@ -16,8 +16,8 @@ class Classcompmenu extends Component {
                     <li><Link to="Classcompouncontrolled"> Classcompouncontrolled </Link></li>
                     <li><Link to="Classcompocontrolled"> Classcompocontrolled </Link></li>
                     <li><Link to="Classlistandkey"> Classlistandkey </Link></li>
-                    <li><Link to="Stateliftingchild"> Stateliftingchild </Link></li>
-                    <li><Link to="Stateliftingparent"> Stateliftingparent </Link></li>
+                    <li><Link to="Stateliftingone"> Stateliftingone </Link></li>
+
 
 
                 </ul>
