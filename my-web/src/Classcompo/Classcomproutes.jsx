@@ -10,6 +10,8 @@ import Classcompouncontrolled from "./Classcompouncontrolled";
 import Classcompocontrolled from "./Classcompocontrolled";
 import Classlistandkey from "./Classlistandkey";
 import Stateliftingone from "./Statelifting/Stateliftingone";
+import Classcompositionandinheritance from "./Classcompositionandinheritance";
+import Classhoc from "./HOC/Classhoc";
 
 
 class Classcomproutes extends Component {
@@ -26,7 +28,8 @@ class Classcomproutes extends Component {
                     <Route path="Classcompocontrolled" element={<Classcompocontrolled />} />
                     <Route path="Classlistandkey" element={<Classlistandkey />} />
                     <Route path="Stateliftingone" element={<Stateliftingone />} />
-
+                    <Route path="Classcompositionandinheritance" element={<Classcompositionandinheritance />} />
+                    <Route path="Classhoc" element={<Classhoc />} />
                 </Route>
             </Routes >
 

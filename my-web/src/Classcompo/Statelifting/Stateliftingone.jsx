@@ -10,8 +10,11 @@ class stateliftingone extends Component {
     }
 
 
-    clickone(data) {
+    clickone = (data) => {
         console.log("clickone", data);
+        this.setState({
+            data: data
+        })
     }
 
     render() {

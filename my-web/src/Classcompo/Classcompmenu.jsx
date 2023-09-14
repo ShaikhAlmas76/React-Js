@@ -17,6 +17,8 @@ class Classcompmenu extends Component {
                     <li><Link to="Classcompocontrolled"> Classcompocontrolled </Link></li>
                     <li><Link to="Classlistandkey"> Classlistandkey </Link></li>
                     <li><Link to="Stateliftingone"> Stateliftingone </Link></li>
+                    <li><Link to="Classcompositionandinheritance">Classcompositionandinheritance</Link> </li>
+                    <li><Link to="Classhoc"> Classhoc </Link></li>
 
 
 

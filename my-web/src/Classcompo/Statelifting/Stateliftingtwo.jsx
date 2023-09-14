@@ -9,7 +9,7 @@ class Stateliftingtwo extends Component {
             <>
                 <h1> State Component  two </h1>
                 {/* <p>{this.props.name}</p> */}
-                <button onClick={() => this.props.click1("name")}> Click-me </button>
+                <button onClick={() => this.props.click1("Almas")}> Click-me </button>
             </>
         );
     }

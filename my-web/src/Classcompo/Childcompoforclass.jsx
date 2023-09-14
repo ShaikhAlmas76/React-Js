@@ -10,6 +10,11 @@ class Childcompoforclass extends Component {
                 <h3>{this.props.name}</h3>
                 <p> {this.props.email} </p>
                 <p>{this.props.mobile}</p>
+                <div>
+                    {this.props.children}
+                </div>
+
+                children
             </>
         );
     }
