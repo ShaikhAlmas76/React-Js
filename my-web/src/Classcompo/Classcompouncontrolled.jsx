@@ -26,4 +26,4 @@ class Classcompouncontrolled extends Component {
     }
 }
 
-export default Classcompouncontrolled;
+export default Classcompouncontrolled; 
