@@ -14,12 +14,15 @@ const Updatecounter = Originalcompo => {
         increment = () => {
             this.setState({ count: this.state.count + 1 })
         }
+        decrement = () => {
+            this.setState({ count: this.state.count - 1 })
+        }
 
         render() {
             return (
 
                 <>
-                    <Originalcompo count={this.state.count} />
+                    <Originalcompo increment={this.increment} decrement={this.decrement} count={this.state.count} />
                 </>
             );
         }

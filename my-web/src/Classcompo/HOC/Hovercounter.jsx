@@ -3,23 +3,24 @@ import { Component } from 'react'
 import Updatecounter from './Hoc'
 
 class Hovercounter extends Component {
-    constructor() {
-        super()
-        this.state = {
-            count: 0
-        }
-    }
+    // constructor() {
+    //     super()
+    //     this.state = {
+    //         count: 0
+    //     }
+    // }
 
-    increment = () => {
-        this.setState({ count: this.state.count + 1 })
-    }
+    // increment = () => {
+    //     this.setState({ count: this.state.count + 1 })
+    // }
+
 
     render() {
-        const { count } = this.props
+        const { count, increment } = this.props
         return (
             <>
                 <h1> Hover Counter </h1>
-                <h2 onMouseOver={this.increment}> {this.props.name}{this.state.count} </h2>
+                <h2 onMouseOver={increment}>{count} </h2>
             </>
         );
     }
