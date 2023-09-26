@@ -1,13 +1,15 @@
 import React from 'react'
-import { Component } from 'react'
-import { Link } from 'react-router-dom'
+import { Link, Outlet } from 'react-router-dom';
 
 const Functioncompomenu = () => {
     return (
         <>
             <ul>
-                <li> <Link to="Functioncompomenu"></Link> </li>
+                <li> <Link to="Functioncompointro">Functioncompointro</Link></li>
+                <li> <Link to="Usestate">Usestate</Link></li>
             </ul>
+
+            <Outlet> </Outlet>
         </>
     )
 }

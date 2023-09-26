@@ -13,7 +13,7 @@ const Example = () => {
 
                     </div>
                     <div className="col-6">
-                        <h3>   <Link to="/Example/Functionalcompo"> Function Component </Link> </h3>
+                        <h3>   <Link to="/Example/Functioncompo"> Function Component </Link> </h3>
                     </div>
                 </div>
                 <div className="row my-3">

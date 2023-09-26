@@ -7,7 +7,7 @@ import Contact from './Contact';
 import Product from "./Product"
 import Example from "./Example";
 const ClasscompoRoute = React.lazy(() => import("./Classcompo/Classcomproutes"))
-const FunctionalCompoRoute = React.lazy(() => import("./Functioncompo/Functioncomproutes"))
+const Functioncomporoutes = React.lazy(() => import("./Functioncompo/Functioncomproutes"))
 const Mainrouter = createBrowserRouter([
 
     {
@@ -45,8 +45,8 @@ const Mainrouter = createBrowserRouter([
 
             }
             , {
-                path: "Fuctioncompo/*",
-                element: <Suspense fallback={<h2>Loading...</h2>}><FunctionalCompoRoute /></Suspense>
+                path: "Functioncompo/*",
+                element: <Suspense fallback={<h2>Loading...</h2>}> < Functioncomporoutes /> </Suspense>
             }
         ]
 
