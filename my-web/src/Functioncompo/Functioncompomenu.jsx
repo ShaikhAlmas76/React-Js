@@ -7,6 +7,8 @@ const Functioncompomenu = () => {
             <ul>
                 <li> <Link to="Functioncompointro">Functioncompointro</Link></li>
                 <li> <Link to="Usestate">Usestate</Link></li>
+                <li> <Link to="Fuctioncompoprops">Fuctioncompoprops</Link></li>
+                <li> <Link to="Useeffect">Useeffect</Link></li>
             </ul>
 
             <Outlet> </Outlet>
