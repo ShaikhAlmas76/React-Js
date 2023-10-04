@@ -5,6 +5,10 @@ import Functioncompomenu from './Functioncompomenu'
 import Usestate from './01Usestate'
 import Fuctioncompoprops from './04Fuctioncompoprops'
 import Useeffect from './05Useeffect'
+import Layouteffect from './06Layouteffect'
+import Usememo from './07Usemeno'
+import Usecallback from './08Usecallback'
+
 
 
 const Functioncomporoutes = () => {
@@ -17,6 +21,9 @@ const Functioncomporoutes = () => {
                     <Route path="Usestate" element={<Usestate />} />
                     <Route path="Fuctioncompoprops" element={<Fuctioncompoprops />} />
                     <Route path="Useeffect" element={<Useeffect />} />
+                    <Route path="Layouteffect" element={<Layouteffect />} />
+                    <Route path="Usememo" element={<Usememo />} />
+                    <Route path="Usecallback" element={<Usecallback />} />
                 </Route>
             </Routes >
 

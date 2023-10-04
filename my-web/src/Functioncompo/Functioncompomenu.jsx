@@ -9,6 +9,9 @@ const Functioncompomenu = () => {
                 <li> <Link to="Usestate">Usestate</Link></li>
                 <li> <Link to="Fuctioncompoprops">Fuctioncompoprops</Link></li>
                 <li> <Link to="Useeffect">Useeffect</Link></li>
+                <li> <Link to="Layouteffect">Layouteffect</Link></li>
+                <li> <Link to="Usememo">Usememo</Link></li>
+                <li> <Link to="Usecallback">Usecallback</Link></li>
             </ul>
 
             <Outlet> </Outlet>
