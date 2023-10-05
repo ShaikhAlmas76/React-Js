@@ -8,6 +8,8 @@ import Useeffect from './05Useeffect'
 import Layouteffect from './06Layouteffect'
 import Usememo from './07Usemeno'
 import Usecallback from './08Usecallback'
+import Usecontextone from './10Usecontextone'
+import Usecontexthook from './11Usecontexthook'
 
 
 
@@ -24,6 +26,8 @@ const Functioncomporoutes = () => {
                     <Route path="Layouteffect" element={<Layouteffect />} />
                     <Route path="Usememo" element={<Usememo />} />
                     <Route path="Usecallback" element={<Usecallback />} />
+                    <Route path="Usecontextone" element={<Usecontextone />} />
+                    <Route path="Usecontexthook" element={<Usecontexthook />} />
                 </Route>
             </Routes >
 

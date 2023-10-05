@@ -12,6 +12,8 @@ const Functioncompomenu = () => {
                 <li> <Link to="Layouteffect">Layouteffect</Link></li>
                 <li> <Link to="Usememo">Usememo</Link></li>
                 <li> <Link to="Usecallback">Usecallback</Link></li>
+                <li> <Link to="Usecontextone">Usecontextone</Link></li>
+                <li> <Link to="Usecontexthook">Usecontexthook</Link></li>
             </ul>
 
             <Outlet> </Outlet>
