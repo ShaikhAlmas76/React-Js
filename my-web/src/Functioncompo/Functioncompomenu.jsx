@@ -15,6 +15,9 @@ const Functioncompomenu = () => {
                 <li> <Link to="Usecontextone">Usecontextone</Link></li>
                 <li> <Link to="Usecontexthook">Usecontexthook</Link></li>
                 <li> <Link to="Usereducer">Usereducer</Link></li>
+                <li> <Link to="Useref">Useref</Link></li>
+                <li> <Link to="API">API</Link></li>
+
             </ul>
 
             <Outlet> </Outlet>
