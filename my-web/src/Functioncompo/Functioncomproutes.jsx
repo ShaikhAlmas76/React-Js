@@ -13,6 +13,7 @@ import Usecontexthook from './11Usecontexthook'
 import Usereducer from './12Usereducer'
 import Useref from './13Useref'
 import API from './14API'
+import Apipost from './15Apipost'
 
 
 
@@ -35,6 +36,7 @@ const Functioncomporoutes = () => {
                     <Route path="Usereducer" element={<Usereducer />} />
                     <Route path="Useref" element={<Useref />} />
                     <Route path="API" element={<API />} />
+                    <Route path="Apipost" element={<Apipost />} />
 
                 </Route>
             </Routes >
