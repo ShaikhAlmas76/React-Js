@@ -7,46 +7,16 @@
       "password": "123456"
     },
     {
-      "id": 0,
-      "name": "Almas",
-      "email": "Almas@gmail.com",
-      "password": "123456"
+      "Name": "adil",
+      "Email": "adil",
+      "Password": "123456",
+      "id": 11
     },
     {
-      "Name": "",
-      "Email": "",
-      "Password": "",
-      "id": 1
-    },
-    {
-      "Name": "almas",
-      "Email": "aaasdd",
-      "Password": "ssdfgh",
-      "id": 2
-    },
-    {
-      "Name": "almas",
-      "Email": "aaasdd",
-      "Password": "ssdfgh",
-      "id": 3
-    },
-    {
-      "Name": "almas",
-      "Email": "aaasdd",
-      "Password": "ssdfgh",
-      "id": 4
-    },
-    {
-      "Name": "almas",
-      "Email": "aaasdd",
-      "Password": "ssdfgh",
-      "id": 5
-    },
-    {
-      "Name": "aaru",
-      "Email": "aaru@gmail.com",
-      "Password": "654321",
-      "id": 6
+      "Name": "Almas",
+      "Email": "almas@gmail.com",
+      "Password": "9898745",
+      "id": 12
     }
   ]
 }

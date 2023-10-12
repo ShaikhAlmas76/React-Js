@@ -3,22 +3,22 @@ import React, { useEffect, useState } from 'react'
 
 const Apichild = () => {
 
-    const [user, setUser] = useState([])
+
     // const [userp, setUserp] = useState([])
 
     // We take any name instead of data and res
     //API get, then after stored in data. After stored in data convert it into JSON formate (HTML view).
     //convert in to JSON we use it
     // View API calle or not : inspect in chrome > Network > Name
-
+    const [user, setUser] = useState([])
     useEffect(() => {
         fetch("https://jsonplaceholder.typicode.com/todos").then((data) => {
             data.json().then((res) => {
-                // console.log(res);
+                console.log(res);
                 setUser(res)
             })
         })
-    }
+    }, []
     )
 
     // fetch("https://jsonplaceholder.typicode.com/todos").then((data) => {
