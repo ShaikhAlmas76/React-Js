@@ -14,7 +14,8 @@ import Usereducer from './12Usereducer'
 import Useref from './13Useref'
 import API from './14API'
 import Apipost from './15Apipost'
-import Mycompo from './16Mycompo'
+// import Mycompo from './16Mycompo'
+import Customhook from './18Customhook'
 
 
 
@@ -38,7 +39,8 @@ const Functioncomporoutes = () => {
                     <Route path="Useref" element={<Useref />} />
                     <Route path="API" element={<API />} />
                     <Route path="Apipost" element={<Apipost />} />
-                    <Route path="Mycompo" element={<Mycompo />} />
+                    {/* <Route path="Mycompo" element={<Mycompo />} /> */}
+                    <Route path="Customhook" element={<Customhook />} />
 
                 </Route>
             </Routes >

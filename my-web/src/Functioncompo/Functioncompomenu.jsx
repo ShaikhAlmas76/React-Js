@@ -19,6 +19,7 @@ const Functioncompomenu = () => {
                 <li> <Link to="API">API</Link></li>
                 <li> <Link to="Apipost">Apipost</Link></li>
                 <li> <Link to="Mycompo">Mycompo</Link></li>
+                <li> <Link to="Customhook">Customhook</Link></li>
 
 
             </ul>

@@ -1,16 +1,17 @@
-import React, { useEffect, useState } from 'react'
+import React from 'react'
+import { useState, useEffect } from 'react'
 import useMaincustomhook from './19useMaincustomhook'
+// import useMaincustomhook from './19useMaincustomhook'
 
 
-const Mycompo = () => {
-
+const Compotwo = () => {
     const [count, setCount] = useState(0)
 
     // useEffect(() => {
     //     document.title = `Count ${count} `
     // }, [count])
-    useMaincustomhook(count)
 
+    useMaincustomhook(count)
     return (
         <>
             <h1> my data</h1>
@@ -19,4 +20,4 @@ const Mycompo = () => {
     );
 }
 
-export default Mycompo;
+export default Compotwo;
