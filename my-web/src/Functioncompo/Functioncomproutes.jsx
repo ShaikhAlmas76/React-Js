@@ -16,6 +16,7 @@ import API from './14API'
 import Apipost from './15Apipost'
 // import Mycompo from './16Mycompo'
 import Customhook from './18Customhook'
+import Crud from './20Crud'
 
 
 
@@ -41,6 +42,7 @@ const Functioncomporoutes = () => {
                     <Route path="Apipost" element={<Apipost />} />
                     {/* <Route path="Mycompo" element={<Mycompo />} /> */}
                     <Route path="Customhook" element={<Customhook />} />
+                    <Route path="Crud" element={<Crud />} />
 
                 </Route>
             </Routes >

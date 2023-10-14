@@ -20,6 +20,7 @@ const Functioncompomenu = () => {
                 <li> <Link to="Apipost">Apipost</Link></li>
                 <li> <Link to="Mycompo">Mycompo</Link></li>
                 <li> <Link to="Customhook">Customhook</Link></li>
+                <li> <Link to="Crud">Crud</Link></li>
 
 
             </ul>
