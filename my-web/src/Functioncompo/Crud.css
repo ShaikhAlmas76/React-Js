@@ -2,7 +2,6 @@
     text-align: center;
 }
 
-
 input {
     padding: 10px 50px;
 }
@@ -21,4 +20,12 @@ h1 {
 
 .alldata button {
     padding: 10px 70px;
+}
+
+.edit {
+    background-color: yellow;
+}
+
+.del {
+    background-color: crimson;
 }
