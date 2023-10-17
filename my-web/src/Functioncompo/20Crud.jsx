@@ -5,6 +5,8 @@ import React, { useState } from 'react'
 const Crud = () => {
     const [name, setName] = useState("")
     const [alldata, setAlldata] = useState([])
+    const [show, setShow] = useState(false)
+    const [edittext, setEdittext] = useState()
 
 
     const handleadd = () => {
@@ -23,13 +25,21 @@ const Crud = () => {
     }
     const handleedit = (i) => {
         setName(alldata[i])
+        setShow(true)
+        setEdittext(i)
+    }
+    const handleupdate = () => {
+        alldata.splice(edittext, 1, index)
+        setAlldata([...alldata])
+        setName("")
+        setShow(false)
     }
     return (
         <>
             <div className='input-fl'>
                 <input value={name} type="text" onChange={(e) => setName(e.target.value)} />
-                <button onClick={handleadd}> Add item </button>
-                <button onClick={handleedit}> Update </button>
+                {!show ? <button onClick={handleadd}> Add item </button> :
+                    <button onClick={handleupdate}> Update </button>}
             </div >
             {
                 alldata.map((val, i) =>
