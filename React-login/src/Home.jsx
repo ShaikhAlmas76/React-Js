@@ -1,28 +1,14 @@
 import React from 'react';
 import {
-    MDBContainer,
-    MDBNavbar,
-    MDBNavbarBrand,
-    MDBBtn
-} from 'mdb-react-ui-kit';
-import { Link, Outlet } from 'react-router-dom';
-import {
     MDBCarousel,
     MDBCarouselItem,
 } from 'mdb-react-ui-kit';
+import Navbar from './Navbar';
 
-export default function Navbar() {
+export default function Home() {
     return (
         <>
-            <MDBNavbar light bgColor='light'>
-                <MDBContainer fluid>
-                    <MDBNavbarBrand><Link to="/"> LOGO</Link></MDBNavbarBrand>
-
-                    <Link to="/login"> Login</Link>
-
-                </MDBContainer>
-            </MDBNavbar >
-
+            <Navbar />
             <MDBCarousel showIndicators showControls fade>
                 <MDBCarouselItem
                     className='w-100 d-block'
@@ -54,9 +40,6 @@ export default function Navbar() {
                     <p>Praesent commodo cursus magna, vel scelerisque nisl consectetur.</p>
                 </MDBCarouselItem>
             </MDBCarousel>
-
-
-            <Outlet> </Outlet>
         </>
     );
 }
