@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState } from 'react';
 import {
     MDBContainer,
     MDBInput,
@@ -7,21 +7,37 @@ import {
     MDBIcon
 }
     from 'mdb-react-ui-kit';
+import { Navigate } from 'react-router-dom';
 import { Link } from 'react-router-dom';
 
 function Login() {
+    const [user, setUser] = useState()
+    const [password, setPassword] = useState()
+
+
+    const login = () => {
+        console.log("login");
+        fetch("http://localhost:5000/user/" + user).then((result) => {
+            console.log(result);
+            result.json().then((resp) => {
+                console.log(resp);
+                // navigate("/login")
+            })
+        })
+    }
+
     return (
         <MDBContainer className="p-3 my-5 d-flex flex-column w-50">
 
-            <MDBInput wrapperClass='mb-4' label='Email address' id='form1' type='email' />
-            <MDBInput wrapperClass='mb-4' label='Password' id='form2' type='password' />
+            <MDBInput value={user} onChange={(e) => setUser(e.target.value)} wrapperClass='mb-4' label='user name' id='form1' type='text' />
+            <MDBInput value={password} onChange={(e) => setPassword(e.target.value)} wrapperClass='mb-4' label='Password' id='form2' type='password' />
 
             <div className="d-flex justify-content-between mx-3 mb-4">
                 <MDBCheckbox name='flexCheck' value='' id='flexCheckDefault' label='Remember me' />
                 <a href="!#">Forgot password?</a>
             </div>
 
-            <MDBBtn className="mb-4">Sign in</MDBBtn>
+            <MDBBtn className="mb-4" onClick={login}>Login</MDBBtn>
 
             <div className="text-center">
                 <p>Not a member?

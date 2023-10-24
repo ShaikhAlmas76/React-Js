@@ -8,19 +8,22 @@ import {
     MDBCheckbox
 }
     from 'mdb-react-ui-kit';
+import { useNavigate } from 'react-router-dom';
 
 function Register() {
 
     const [name, setName] = useState("")
     const [email, setEmail] = useState("")
     const [password, setPassword] = useState("")
+    const navigate = useNavigate()
+
     const Register = () => {
         console.log("Register");
 
         let data = { name, email, password }
         console.log(data);
 
-        fetch(" http://localhost:5000/user", {
+        fetch("http://localhost:5000/user", {
             method: "POST",
             headers: {
                 "Content-Type": "application/json",
@@ -30,7 +33,7 @@ function Register() {
             console.log(result);
             result.json().then((resp) => {
                 console.log(resp);
-                // navigate("/userdata")
+                navigate("/login")
             })
         })
     }
