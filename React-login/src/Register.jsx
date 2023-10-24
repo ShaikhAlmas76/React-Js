@@ -18,6 +18,21 @@ function Register() {
         console.log("Register");
 
         let data = { name, email, password }
+        console.log(data);
+
+        fetch(" http://localhost:5000/user", {
+            method: "POST",
+            headers: {
+                "Content-Type": "application/json",
+            },
+            body: JSON.stringify(data)
+        }).then((result) => {
+            console.log(result);
+            result.json().then((resp) => {
+                console.log(resp);
+                // navigate("/userdata")
+            })
+        })
     }
 
     return (
