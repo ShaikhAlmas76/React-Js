@@ -20,10 +20,10 @@ function Register() {
     const Register = () => {
         console.log("Register");
 
-        let data = { name, email, password }
+        let data = { name, email, password, role: 2 }
         console.log(data);
 
-        fetch("http://localhost:5000/user", {
+        fetch("http://localhost:5000/user?name=", {
             method: "POST",
             headers: {
                 "Content-Type": "application/json",

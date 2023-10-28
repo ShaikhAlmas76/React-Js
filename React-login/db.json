@@ -4,31 +4,15 @@
       "id": 1,
       "name": "Almas shaikh",
       "email": "almas@gmail.com",
-      "password": "nawab1609"
+      "password": "nawab1609",
+      "role": 1
     },
     {
-      "name": "almass",
-      "email": "almas@gmail.com",
-      "password": "4444444",
+      "name": "khan",
+      "email": "khan@gmail.com",
+      "password": "121212",
+      "role": 2,
       "id": 2
-    },
-    {
-      "name": "aaru",
-      "email": "aaru@gmail.com",
-      "password": "123456789",
-      "id": 3
-    },
-    {
-      "name": "adil",
-      "email": "adil@gmail.com",
-      "password": "99999999",
-      "id": 4
-    },
-    {
-      "name": "dosti",
-      "email": "dosti@gmail.com",
-      "password": "99999999",
-      "id": 5
     }
   ]
 }
